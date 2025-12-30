@@ -1,51 +1,91 @@
-# Spring Boot Backend Practice
+# Backend Practice Lab
 
-## Repository Overview
-This repository is a hands-on practice workspace for backend development using **Spring Boot**.  
-It contains small, focused projects and experiments aimed at strengthening core backend concepts and real-world application design.
+A backend practice repository built using Spring Boot, designed to strengthen backend fundamentals through incremental, real-world–style implementations.
 
-The goal of this repository is **learning through implementation**, not polished production systems.
+This repository is maintained as a **backend engineering lab**, focusing on correctness, clarity, and disciplined learning rather than tutorials or quick demos.
 
 ---
 
-## Tech Stack
+## 🎯 Purpose
+
+This repository exists to:
+- Build strong backend fundamentals
+- Learn backend technologies through implementation, not theory
+- Practice real-world backend patterns incrementally
+- Develop discipline in clean code and version control
+
+This is **not** a tutorial or throwaway repository.
+
+---
+
+## 🛠 Tech Stack (Phase-wise)
+
+### Phase 1 — Core Backend (Current)
 - Java
 - Spring Boot
-- Spring MVC
+- Spring Web
 - Spring Data JPA
-- Hibernate
-- REST APIs
-- MySQL / H2 (as applicable)
+- MySQL / PostgreSQL
 - Maven
 
----
+### Phase 2 — Advanced Backend Concepts (Planned)
+- Exception handling and validation
+- Authentication and basic security
+- Pagination and filtering
+- API design best practices
 
-## What This Repository Covers
-- Building RESTful APIs
-- Controller–Service–Repository architecture
-- Database integration using JPA & Hibernate
-- CRUD operations
-- Request validation and exception handling
-- Basic authentication and security concepts
-- Application configuration and properties management
-
----
-
-## Purpose of This Repository
-- Practice backend development with Spring Boot
-- Build strong fundamentals before production-level projects
-- Experiment safely with backend patterns and tools
-- Serve as a reference for future backend work
+### Phase 3 — System Expansion (Planned)
+- NoSQL fundamentals (MongoDB)
+- Event-driven basics (Kafka)
+- Asynchronous processing concepts
 
 ---
 
-## Notes
-- This is a **practice repository**, so code quality may vary between projects.
-- Projects are intentionally kept simple and focused.
-- Refactoring and improvements are ongoing.
+## 🌱 Repository Evolution Strategy
+
+This repository evolves **without losing continuity**, reflecting how backend systems grow over time:
+
+- `main` branch  
+  → Core Spring Boot backend with relational database
+
+- `nosql` branch  
+  → NoSQL-based experiments and data modeling
+
+- `events` branch  
+  → Event-driven and asynchronous patterns
+
+Each branch represents a deliberate learning milestone.
 
 ---
 
-## Author
-**Tejas Halvankar**  
-Backend-focused engineering student exploring Spring Boot and real-world backend development.
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Configure database credentials in `application.properties`
+3. Run the Spring Boot application
+4. Test endpoints using Postman or browser
+
+---
+
+## 📌 Status
+
+🚧 Under active development  
+Features are added incrementally with meaningful, traceable commits.
+
+---
+
+## 🧠 Philosophy
+
+- Fundamentals before frameworks
+- One concept at a time
+- Clarity over cleverness
+- Discipline over shortcuts
+
+---
+
+## 👨‍💻 Author
+
+**Tejas Halvankar**
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/<YOUR_GITHUB_USERNAME>)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/<YOUR_LINKEDIN_USERNAME>/)
