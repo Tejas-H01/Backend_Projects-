@@ -36,19 +36,19 @@ The application produces four different outputs based on the endpoint accessed:
 
 ### Output 1 – Addition
 `/calc/add?a=10&b=5`  
-![Addition Output](output_add.png)
+![Addition Output](add.png)
 
 ### Output 2 – Subtraction
 `/calc/sub?a=10&b=5`  
-![Subtraction Output](output_sub.png)
+![Subtraction Output](sub.png)
 
 ### Output 3 – Multiplication
 `/calc/mul?a=10&b=5`  
-![Multiplication Output](output_mul.png)
+![Multiplication Output](mul.png)
 
 ### Output 4 – Division
 `/calc/div?a=10&b=5`  
-![Division Output](output_div.png)
+![Division Output](div.png)
 
 ---
 
