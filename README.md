@@ -1,91 +1,73 @@
-# Backend Practice Lab
+# Java Spring Boot – Calculator REST API Example Program
 
-A backend practice repository built using Spring Boot, designed to strengthen backend fundamentals through incremental, real-world–style implementations.
-
-This repository is maintained as a **backend engineering lab**, focusing on correctness, clarity, and disciplined learning rather than tutorials or quick demos.
-
----
-
-## 🎯 Purpose
-
-This repository exists to:
-- Build strong backend fundamentals
-- Learn backend technologies through implementation, not theory
-- Practice real-world backend patterns incrementally
-- Develop discipline in clean code and version control
-
-This is **not** a tutorial or throwaway repository.
+This repository contains a Java **Spring Boot** application that demonstrates how to build a simple **RESTful calculator service**.  
+It is intended for beginners who are learning Spring Boot basics, REST controllers, dependency injection, and request handling.
 
 ---
 
-## 🛠 Tech Stack (Phase-wise)
+## 📌 Program Overview
 
-### Phase 1 — Core Backend (Current)
-- Java
-- Spring Boot
-- Spring Web
-- Spring Data JPA
-- MySQL / PostgreSQL
-- Maven
+The program implements a **calculator REST API** that performs basic arithmetic operations using HTTP endpoints.  
+A service class handles the business logic, while a controller class exposes endpoints for client interaction.
 
-### Phase 2 — Advanced Backend Concepts (Planned)
-- Exception handling and validation
-- Authentication and basic security
-- Pagination and filtering
-- API design best practices
-
-### Phase 3 — System Expansion (Planned)
-- NoSQL fundamentals (MongoDB)
-- Event-driven basics (Kafka)
-- Asynchronous processing concepts
+The application supports four operations:
+- Addition
+- Subtraction
+- Multiplication
+- Division
 
 ---
 
-## 🌱 Repository Evolution Strategy
+## 🧪 Code Functionality
 
-This repository evolves **without losing continuity**, reflecting how backend systems grow over time:
-
-- `main` branch  
-  → Core Spring Boot backend with relational database
-
-- `nosql` branch  
-  → NoSQL-based experiments and data modeling
-
-- `events` branch  
-  → Event-driven and asynchronous patterns
-
-Each branch represents a deliberate learning milestone.
+- Uses **Spring Boot** to bootstrap the application.
+- Defines a service class (`Arithmetic_Service`) to handle arithmetic logic.
+- Uses dependency injection to inject the service into the controller.
+- Exposes REST endpoints using `@RestController` and `@GetMapping`.
+- Accepts input values using `@RequestParam`.
+- Returns results as HTTP responses.
+- Demonstrates separation of concerns between controller and service layers.
 
 ---
 
-## 🚀 Getting Started
+## 🖥️ Output
 
-1. Clone the repository
-2. Configure database credentials in `application.properties`
-3. Run the Spring Boot application
-4. Test endpoints using Postman or browser
+The application produces four different outputs based on the endpoint accessed:
+
+### Output 1 – Addition
+`/calc/add?a=10&b=5`  
+![Addition Output](output_add.png)
+
+### Output 2 – Subtraction
+`/calc/sub?a=10&b=5`  
+![Subtraction Output](output_sub.png)
+
+### Output 3 – Multiplication
+`/calc/mul?a=10&b=5`  
+![Multiplication Output](output_mul.png)
+
+### Output 4 – Division
+`/calc/div?a=10&b=5`  
+![Division Output](output_div.png)
 
 ---
 
-## 📌 Status
+## 📂 File Information
 
-🚧 Under active development  
-Features are added incrementally with meaningful, traceable commits.
-
----
-
-## 🧠 Philosophy
-
-- Fundamentals before frameworks
-- One concept at a time
-- Clarity over cleverness
-- Discipline over shortcuts
+- `CalculatorApplication.java` — Spring Boot main class
+- `Controller.java` — REST controller exposing calculator endpoints
+- `Arithmetic_Service.java` — Service class containing business logic
+- `output_add.png` — Screenshot of addition result
+- `output_sub.png` — Screenshot of subtraction result
+- `output_mul.png` — Screenshot of multiplication result
+- `output_div.png` — Screenshot of division result
+- `README.md` — Project documentation
 
 ---
 
 ## 👨‍💻 Author
 
-**Tejas Halvankar**
+**Tejas Halvankar**  
+📧 Email: `tejashalvankar0@gmail.com`  
+🌐 GitHub: [Tejas-H01](https://github.com/Tejas-H01)
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/<YOUR_GITHUB_USERNAME>)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/<YOUR_LINKEDIN_USERNAME>/)
