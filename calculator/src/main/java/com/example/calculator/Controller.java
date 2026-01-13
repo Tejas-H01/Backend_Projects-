@@ -1,45 +1,43 @@
+
 package com.example.calculator;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "*")
 public class Controller {
+
 
     private final Arithmetic_Service service;
 
-    public Controller(Arithmetic_Service service) {
-        this.service = service;
+    public Controller(Arithmetic_Service service){
+
+        this.service = service ;
     }
 
-    @PostMapping("/calculate")
-    public CalcResponse calculate(@RequestBody CalcRequest request) {
+    @GetMapping("/calc/add")
+    public String add(@RequestParam int a , @RequestParam int b){
 
-        int result;
-
-        switch (request.getOperation()) {
-            case "add":
-                result = service.add(request.getA(), request.getB());
-                break;
-
-            case "sub":
-                result = service.sub(request.getA(), request.getB());
-                break;
-
-            case "mul":
-                result = service.mul(request.getA(), request.getB());
-                break;
-
-            case "div":
-                result = service.div(request.getA(), request.getB());
-                break;
-
-            default:
-                throw new IllegalArgumentException(
-                        "Invalid operation: " + request.getOperation()
-                );
-        }
-
-        return new CalcResponse(result);
+        return "Addition : " + service.add(a,b);
     }
+
+    @GetMapping("/calc/sub")
+    public String sub(@RequestParam int a , @RequestParam int b){
+
+        return "Subtraction : " + service.sub(a,b);
+    }
+
+    @GetMapping("/calc/mul")
+    public String mul(@RequestParam int a , @RequestParam int b){
+
+        return "Multiplication : " + service.mul(a,b);
+    }
+
+    @GetMapping("/calc/div")
+    public String div(@RequestParam int a , @RequestParam int b){
+
+        return "Division : " + service.div(a,b);
+    }
+
 }
