@@ -1,14 +1,17 @@
-package com.example.calculator;
+package com.example.calculator.controller;
 
+import com.example.calculator.model.CalcRequest;
+import com.example.calculator.model.CalcResponse;
+import com.example.calculator.service.ArithmeticService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
 public class Controller {
 
-    private final Arithmetic_Service service;
+    private final ArithmeticService service;
 
-    public Controller(Arithmetic_Service service) {
+    public Controller(ArithmeticService service) {
         this.service = service;
     }
 

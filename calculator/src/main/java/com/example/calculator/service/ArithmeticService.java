@@ -1,9 +1,9 @@
-package com.example.calculator;
+package com.example.calculator.service;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class Arithmetic_Service {
+public class ArithmeticService {
 
     public int add(int a, int b) {
         return a + b;

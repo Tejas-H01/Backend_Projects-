@@ -57,13 +57,26 @@ The application produces four different outputs based on the endpoint accessed:
 - `CalculatorApplication.java` — Spring Boot main class
 - `Controller.java` — REST controller exposing calculator endpoints
 - `Arithmetic_Service.java` — Service class containing business logic
-- `output_add.png` — Screenshot of addition result
-- `output_sub.png` — Screenshot of subtraction result
-- `output_mul.png` — Screenshot of multiplication result
-- `output_div.png` — Screenshot of division result
+- `add.png` — Screenshot of addition result
+- `sub.png` — Screenshot of subtraction result
+- `mul.png` — Screenshot of multiplication result
+- `div.png` — Screenshot of division result
 - `README.md` — Project documentation
 
 ---
+
+## Project Structure
+
+This project follows a layered Spring Boot architecture:
+
+- controller → Handles REST API requests
+- service → Contains business logic for arithmetic operations
+- model → Defines request and response DTOs
+- CalculatorApplication → Main Spring Boot entry point
+
+The separation of layers improves readability, maintainability, and scalability.
+
+
 
 ## 👨‍💻 Author
 
